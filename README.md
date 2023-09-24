@@ -10,7 +10,7 @@
 <p> Проект 1: тест веб-приложения для учителей от Skyeng</p>
 <p> Проект 2: тест кабинета учителя в приложении Skyeng</p>
 <p> Прошу перейти по ссылке и более подробно познакомистя с данными проектами!:</p>
-<p> "https://drive.google.com/file/d/1wMrL5lG88sKVfPhxt93vBElLAvb2kZ0r/view?usp=sharing"</p>
+<p> https://drive.google.com/file/d/1wMrL5lG88sKVfPhxt93vBElLAvb2kZ0r/view?usp=sharing</p>
 <p> Данные для входа в учетные записи могу выслать по запросу, если понадобится подробное разъяснение </p>
 ## Контактная информация
 - Email: anokhin_daniil24@mail.ru
