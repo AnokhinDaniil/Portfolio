@@ -12,6 +12,6 @@
 <p> Прошу перейти по ссылке и более подробно познакомистя с данными проектами!:</p>
 <p> https://drive.google.com/file/d/1wMrL5lG88sKVfPhxt93vBElLAvb2kZ0r/view?usp=sharing</p>
 <p> Данные для входа в учетные записи могу выслать по запросу, если понадобится подробное разъяснение </p>
-<p> Контактная информация</p>
+<p> Контактная информация:</p>
 <p> - Email: anokhin_daniil24@mail.ru</p>
 <p> - Telegram: https://t.me/AnokhinDaniil</p>
