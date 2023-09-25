@@ -1,0 +1,267 @@
+{
+	"info": {
+		"_postman_id": "1cf9ccd0-533e-45ca-9f25-963523f6ef04",
+		"name": "ДЗ 4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27878096"
+	},
+	"item": [
+		{
+			"name": "Приемочный тест-кейс",
+			"item": [
+				{
+					"name": "1. Получение списка задач",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://todo-app-sky.herokuapp.com/",
+							"protocol": "https",
+							"host": [
+								"todo-app-sky",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2. Добавление задачи",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"title\":\"Погулять с собакой вечером\",\"completed\":false,\"order\":null}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://todo-app-sky.herokuapp.com/",
+							"protocol": "https",
+							"host": [
+								"todo-app-sky",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3. Получение списка задач после добавления новой задачи",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://todo-app-sky.herokuapp.com/",
+							"protocol": "https",
+							"host": [
+								"todo-app-sky",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4. Отметка задачи выполненной",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"completed\": true}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://todo-app-sky.herokuapp.com/84858",
+							"protocol": "https",
+							"host": [
+								"todo-app-sky",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"84858"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "5. Получение списка задач после отметки задачи выполненной",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://todo-app-sky.herokuapp.com/",
+							"protocol": "https",
+							"host": [
+								"todo-app-sky",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "6. Удаление задачи",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://todo-app-sky.herokuapp.com/84858",
+							"protocol": "https",
+							"host": [
+								"todo-app-sky",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"84858"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "7. Получение списка задач после удалания задачи",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://todo-app-sky.herokuapp.com/",
+							"protocol": "https",
+							"host": [
+								"todo-app-sky",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Работа с заглушками",
+			"item": [
+				{
+					"name": "Получение списка задач",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "result",
+								"value": "empty list",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8090/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"tasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Добавление новой задачи",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Погулять с собакой\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/addition",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"addition"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://buy-cakes.herokuapp.com/",
+			"type": "string"
+		}
+	]
+}

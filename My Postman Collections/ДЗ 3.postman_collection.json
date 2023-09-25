@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "05be3561-bad5-48a5-ba01-b27df4057cbb",
+		"name": "ДЗ 3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27878096"
+	},
+	"item": [
+		{
+			"name": "Получение списка тортов",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}api/cakes",
+					"host": [
+						"{{baseUrl}}api"
+					],
+					"path": [
+						"cakes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Добавление торта",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"Тирамису\",\"photoFileName\":\"\",\"description\":\"Вкусный торт\",\"forWhoId\":0,\"occasionId\":0}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}api/cakes/add",
+					"host": [
+						"{{baseUrl}}api"
+					],
+					"path": [
+						"cakes",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Отображение нового торта",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}api/cakes/95244",
+					"host": [
+						"{{baseUrl}}api"
+					],
+					"path": [
+						"cakes",
+						"95244"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Удаление торта",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}api/cakes/95244",
+					"host": [
+						"{{baseUrl}}api"
+					],
+					"path": [
+						"cakes",
+						"95244"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Проверка об отсутствии торта",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}api/cakes/95244",
+					"host": [
+						"{{baseUrl}}api"
+					],
+					"path": [
+						"cakes",
+						"95244"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://buy-cakes.herokuapp.com/"
+		}
+	]
+}
